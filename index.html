@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Jogo da velha</title>
+		<link rel="stylesheet" href="normalize.css">
+		<link rel="stylesheet" href="style.css">
+		<script src="jquery-2.2.1.js"></script>
+		<link rel="shortcut icon" href="imagens/cerquilha.png" type="image/x-icon">
+	</head>
+
+	<body>
+
+		<div id="pagina_inicial">
+			<div id="id_player">
+				<img src="imagens/jogador_1.png" alt="Jogador 1">
+				<input type="text" name="player1_name" id="player_name_1" autocomplete="off" placeholder="Apelido do Jogador 1">
+			</div>
+			<div id="start_game">
+				<p>JOGO DA VELHA</p>
+				<button id="btn_start"><img src="imagens/iniciar.png" alt="Iniciar jogo"></button>
+			</div>
+			<div id="id_player">
+				<img src="imagens/jogador_2.png" alt="Jogador 2">
+				<input type="text" name="player2_name" id="player_name_2" autocomplete="off" placeholder="Apelido do Jogador 2">
+			</div>
+
+		</div>
+
+		<div id="box_jogo">
+			<div id="vez_de_jogar">
+				<span>Vez de: </span>
+				<span id="jogador_vez"></span>
+			</div>
+			<div id="palco_jogo">
+				<div id="id_player_game">
+					<p id="name_player1"></p>
+					<img src="imagens/jogador_1.png" alt="Jogador 1">
+					
+				</div>
+				<div id="game">
+					<table>
+						<tbody>
+							<tr>
+								<td class="campo1"></td>
+								<td class="campo2"></td>
+								<td class="campo3"></td>
+							</tr>
+							<tr>
+								<td class="campo4"></td>
+								<td class="campo5"></td>
+								<td class="campo6"></td>
+							</tr>
+							<tr>
+								<td class="campo7"></td>
+								<td class="campo8"></td>
+								<td class="campo9"></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			
+				<div id="id_player_game">
+					<p id="name_player2"></p>
+					<img src="imagens/jogador_2.png" alt="Jogador 2">
+					
+				</div>
+			</div>
+		</div>
+		<div id="fim_jogo">
+			<h1>Fim de jogo</h1>
+			<p>O grande vencedor foi: </p>
+			<img id="img_vencedor" src="" alt="Imagem do venderdor">
+			<span id="nome_vencedor"></span>
+			<button id="botao_novo_jogo">Novo Jogo</button>
+		</div>
+
+		<script src="tela_inicial.js"></script>
+		<script src="jogo.js"></script>
+	</body>
+</html>

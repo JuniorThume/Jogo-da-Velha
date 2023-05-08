@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: darkgray;
+}
+
+#pagina_inicial, #palco_jogo {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-content: center;
+}
+
+#id_player, #start_game {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#start_game {
+    font-size: 2em;
+}
+
+#id_player {
+    margin: 0 100px;
+}
+
+#btn_start{
+    transition: all .5s;
+    background-color: transparent;
+    border: none;
+}
+
+#btn_start:hover{
+    scale: 1.1;
+    transition: all .5s;
+}
+
+#player_name_1, #player_name2 {
+    margin-top: 20px;
+}
+
+
+/* Tela de Jogo*/
+
+#palco_jogo {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row nowrap;
+}
+
+#vez_de_jogar {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#jogador_vez {
+    font-weight: 700;
+}
+
+#id_player_game {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 60px;
+    align-self: flex-end;
+}
+
+#game {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 400px;
+    height: 400px;
+    text-align: center;
+}
+
+td {
+    width: 100px;
+    height: 100px;
+}
+
+.campo5{
+    border: solid 1px black;
+}
+
+.campo4, .campo6 {
+    border-bottom: solid 1px black;
+    border-top: solid 1px black;
+}
+
+.campo2, .campo8 {
+    border-left: solid 1px black;
+    border-right: solid 1px black;
+}
+
+.campo {
+    border: solid 1px black;
+}
+
+
+/*Fim de jogo*/
+
+#fim_jogo {
+    background-color: lightslategrey;
+    width: 40vw;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+#botao_novo_jogo {
+    margin: 10px 0;
+    background-color: palegreen;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+}
+
+#botao_novo_jogo:hover {
+    scale: 1.1;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.411);
+    transition: all .3s;
+}
